@@ -67,7 +67,7 @@
                     <img src="./images/Investments.svg" alt="">
                     <span>My Privileges</span>
                 </li>
-                <li class="li-nav-left">
+                <li class="li-nav-left active">
                     <img src="./images/settings-solid.svg" alt="">
                     <span>Setting</span>
                 </li>
@@ -77,40 +77,85 @@
             <div class="panel">
                 <nav class="">
                     <ul class="nav-panel">
-                        <li>Edit Profile</li>
-                        <li>Preferences</li>
-                        <li>Security</li>
+                        <li class="active li-panel">Edit Profile</li>
+                        <li class="li-panel">Preferences</li>
+                        <li class="li-panel">Security</li>
                     </ul>
                 </nav>
-                <!-- <div class="big-img">
-                    <img src="images/avatar.svg" alt="">
-                </div> -->
-                <form class="form-settings" action="/submit" method="post">
-                    <div class="form-div">
-                        <div class="form-column">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" required>
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                            <label for="message">Date of Birth</label>
-                            <input type="email" id="email" name="email" required>
-                            <label for="message">Date of Birth</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-column">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" required>
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                            <label for="message">Date of Birth</label>
-                            <input type="email" id="email" name="email" required>
-                            <label for="message">Date of Birth</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
+                <div class="wrapper-content">
+                    <div class="big-img">
+                        <img class="img-avatar" src="images/avatar.svg" alt="">
                     </div>
-                    <input type="submit" value="Отправить">
-                </form>
-                  
+                    <form class="form-settings" action="/submit" method="post">
+                        <div class="form-div">
+                            <div class="form-column">
+                                <div class="label-input">
+                                    <label for="name">Your Name</label>
+                                    <div class="wrapper-input">
+                                        <input class="input-form" type="text" id="name" name="name" value="Charlene Reed" required>
+                                    </div>
+                                </div>
+                                <div class="label-input">
+                                    <label for="name">Email</label>
+                                    <div class="wrapper-input">
+                                        <input class="input-form" value="charlenereed@gmail.com " type="email" id="name" name="name" required>
+                                    </div>
+                                </div>
+                                <div class="label-input">
+                                    <label for="name">Date of Birth</label>
+                                    <div class="wrapper-input">
+                                        <input class="input-form" type="text" id="name" name="name" value="25 January 1990" required>
+                                    </div>
+                                </div>
+                                <div class="label-input">
+                                    <label for="name">Permanent Address</label>
+                                    <div class="wrapper-input">
+                                        <input class="input-form" type="text" id="name" name="name" value="San Jose, California, USA" required>
+                                    </div>
+                                </div>
+                                <div class="label-input">
+                                    <label for="name">Postal Code</label>
+                                    <div class="wrapper-input">
+                                        <input class="input-form" type="text" id="name" name="name" value="45962" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-column">
+                                <div class="label-input">
+                                    <label for="name">User Name</label>
+                                    <div class="wrapper-input">
+                                        <input class="input-form" type="text" id="name" name="name" value="Charlene Reed" required>
+                                    </div>
+                                </div>
+                                <div class="label-input">
+                                    <label for="name">Password</label>
+                                    <div class="wrapper-input">
+                                        <input class="input-form" type="password" id="name" value="**********" name="name" required>
+                                    </div>
+                                </div>
+                                <div class="label-input">
+                                    <label for="name">Present Address</label>
+                                    <div class="wrapper-input">
+                                        <input class="input-form" type="text" id="name" name="name" value="San Jose, California, USA" required>
+                                    </div>
+                                </div>
+                                <div class="label-input">
+                                    <label for="name">City</label>
+                                    <div class="wrapper-input">
+                                        <input class="input-form" type="text" id="name" name="name" value="San Joe" required>
+                                    </div>
+                                </div>
+                                <div class="label-input">
+                                    <label for="name">Country</label>
+                                    <div class="wrapper-input">
+                                        <input class="input-form" type="text" id="name" name="name" value="USA" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="submit" class="submit" value="Save">
+                    </form>
+                </div>
             </div>
         </div>
     </main>

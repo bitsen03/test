@@ -1,9 +1,11 @@
 body, html {
   padding: 0;
   margin: 0;
-  margin-left: 44px;
   height: 100%;
   overflow: hidden;
+}
+body {
+
 }
 
 html {
@@ -13,12 +15,12 @@ html {
 .header {
   display: flex;
   align-items: center;
+  gap: 63px;
   height: 100px;
-  padding: 33px 19.69px 33px 0;
+  padding: 0 19.69px 0 44px;
 }
 
 .content-header {
-  margin-left: 63px;
   display: flex;
   align-items: center;
   height: 60px;
@@ -63,7 +65,6 @@ button {
 }
 
 .avatar>img {
-  height: 100%; /* Заполняем контейнер по высоте */
   object-fit: cover; /* Адаптируем изображение, чтобы оно не выходило за пределы */
   object-position: top right; /* Сдвигаем изображение, чтобы лицо было по центру и сверху */
 }
@@ -90,12 +91,13 @@ button {
 .nav-left {
   max-width: 190px;
   padding-right: 60px;
+  margin-top: 33px;
 }
 
 .nav-left>ul{
   display: flex;
   flex-direction: column;
-  gap: 42px;
+  gap: 32px;
 }
 
 ul {
@@ -106,11 +108,6 @@ li {
   list-style: none;
 }
 
-.li-nav-left {
-  display: flex;
-  align-items: center;
-  gap: 25px;
-}
 
 .main {
   display: flex;
@@ -127,7 +124,6 @@ li {
   border-radius: 25px;
   font-size: 16px;
   padding: 0 30px;
-
 }
 
 .nav-panel {
@@ -140,22 +136,113 @@ li {
 }
 
 .input-form {
+  all: unset;
+}
+
+.form-settings {
+  width: 100%;
+}
+.form-div {
+  display: flex;
+  gap: 29px;
+  width: 100%;
+}
+
+.wrapper-input {
+  margin-top: 15px;
+  padding: 16px 16px 16px 20px;
+  border: 1px solid rgb(223, 234, 242);
+  border-radius: 15px;
   color: rgb(113, 142, 191);
   font-family: Inter;
   font-size: 15px;
   font-weight: 400;
-  padding: 16px 293px 16px 20px;
-}
-
-.form-div {
-  display: flex;
-  gap: 29px;
-}
-
-.form-settings {
-
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
 }
 .form-column {
   display: flex;
   flex-direction: column;
+  width: 50%;
+  gap: 22px;
+}
+
+.active {
+  color: rgb(24, 20, 243);
+  border: 3px rgb(24, 20, 243) solid;
+}
+
+.li-nav-left {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  padding: 5px 0;
+  padding-left: 44px;
+}
+
+.li-panel {
+  padding: 11px 16px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.big-img {
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  overflow: hidden;
+}
+.img-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  object-position: top right;
+}
+.wrapper-content {
+  display: flex;
+  gap: 55px;
+}
+
+.submit {
+  all: unset;
+  float: right;
+  margin-top: 30px;
+  color: white;
+  border-radius: 15px;
+	background: rgb(24, 20, 243);
+  padding: 14px 72px;
+}
+
+@media (max-width: 990px) {
+  .big-img {
+    display: none;
+  }
+
+  .nav-left {
+    padding-right: 3%;
+  }
+
+  .li-nav-left {
+    padding-left: 5px;
+  }
+  .nav-header {
+    gap: 3%;
+  }
+  .header {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 860px) {
+  .interactive-header {
+    gap: 3%;
+  }
+  .header {
+    gap: 15px;
+  }
 }
