@@ -2,7 +2,6 @@ body, html {
   padding: 0;
   margin: 0;
   height: 100%;
-  overflow: hidden;
 }
 body {
 
@@ -111,11 +110,15 @@ li {
 
 .main {
   display: flex;
-  height: 100%;
+  height: 100vh; /* Высота на весь экран */
 }
+
 .main-content {
   background-color: rgb(245, 247, 250);
-  width: 100%;
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
 }
 
 .panel {
@@ -124,7 +127,12 @@ li {
   border-radius: 25px;
   font-size: 16px;
   padding: 0 30px;
+  flex: 1; /* Панель расширяется на всю доступную высоту */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Распределяет элементы внутри панели */
 }
+
 
 .nav-panel {
   display: flex;
@@ -134,6 +142,7 @@ li {
   margin-bottom: 52px;
   padding-top: 32px;
 }
+
 
 .input-form {
   all: unset;
@@ -219,10 +228,11 @@ li {
 }
 
 @media (max-width: 990px) {
-  .big-img {
-    display: none;
-  }
 
+  .wrapper-content {
+    flex-direction: column;
+    align-items: center;
+  }
   .nav-left {
     padding-right: 3%;
   }
@@ -239,10 +249,45 @@ li {
 }
 
 @media (max-width: 860px) {
+  .text-header {
+    display: none;
+  }
   .interactive-header {
     gap: 3%;
   }
   .header {
     gap: 15px;
+  }
+  .interactive-header {
+    justify-content: space-around;
+  }
+  .content-header {
+    display: block;
+  }
+}
+@media (max-width: 750px) {
+
+  .form-div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .li-nav-left {
+    gap: 2%;
+  }
+  
+  .nav-panel {
+    justify-content: space-between;
+    gap: 0;
+  }
+  .main {
+    display: flex;
+    height: 100vh; /* Высота на весь экран */
+    flex-direction: column;
+  }
+  .nav-left {
+    display: none;
+  }
+  .logo {
+    display: none;
   }
 }
