@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BankDash</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./images/Logo.svg" alt="">
+        </div>
+        <div class="content-header">
+            <div class="text-header">Setting</div>
+            <div class="interactive-header">
+                <div class="search-header">
+                    <img class="search-img" src="./images/search.svg" alt="">
+                    <input class="input-header" type="text" placeholder="Search for something">
+                </div>
+                <nav class="nav-header">
+                    <button class="setting btn-nav">
+                        <img class="btn-img" src="./images/setting.svg" alt="">
+                    </button>
+                    <button class="notification btn-nav">
+                        <img class="btn-img" src="./images/notification.svg" alt="">
+                    </button>
+                    <div class="avatar">
+                        <img src="./images/avatar.svg" alt="">
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <nav class="nav-left">
+            <ul>
+                <li class="li-nav-left">
+                    <img src="images/dashboard.png" alt="">
+                    <span>Dashboard</span>
+                </li>
+                <li class="li-nav-left">
+                    <img src="images/Group(1).svg" alt="">
+                    <span>Transictions</span>
+                </li>
+                <li class="li-nav-left">
+                    <img src="images/profile.svg" alt="">
+                    <span>Accounts</span>
+                </li>
+                <li class="li-nav-left">
+                    <img src="images/Investments.svg" alt="">
+                    <span>Investments</span>
+                </li>
+                <li class="li-nav-left">
+                    <img src="./images/credit-card.svg" alt="">
+                    <span>Credit Cards</span>
+                </li>
+                <li class="li-nav-left">
+                    <img src="./images/loans.svg" alt="">
+                    <span>Loans</span>
+                </li>
+                <li class="li-nav-left">
+                    <img src="./images/services.svg" alt="">
+                    <span>Services</span>
+                </li>
+                <li class="li-nav-left">
+                    <img src="./images/Investments.svg" alt="">
+                    <span>My Privileges</span>
+                </li>
+                <li class="li-nav-left">
+                    <img src="./images/settings-solid.svg" alt="">
+                    <span>Setting</span>
+                </li>
+            </ul>
+        </nav>
+        <div class="main-content">
+            <div class="panel">
+                <nav class="">
+                    <ul class="nav-panel">
+                        <li>Edit Profile</li>
+                        <li>Preferences</li>
+                        <li>Security</li>
+                    </ul>
+                </nav>
+                <!-- <div class="big-img">
+                    <img src="images/avatar.svg" alt="">
+                </div> -->
+                <form class="form-settings" action="/submit" method="post">
+                    <div class="form-div">
+                        <div class="form-column">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <label for="message">Date of Birth</label>
+                            <input type="email" id="email" name="email" required>
+                            <label for="message">Date of Birth</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-column">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <label for="message">Date of Birth</label>
+                            <input type="email" id="email" name="email" required>
+                            <label for="message">Date of Birth</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <input type="submit" value="Отправить">
+                </form>
+                  
+            </div>
+        </div>
+    </main>
+</body>
+</html>

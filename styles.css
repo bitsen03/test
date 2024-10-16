@@ -1,0 +1,161 @@
+body, html {
+  padding: 0;
+  margin: 0;
+  margin-left: 44px;
+  height: 100%;
+  overflow: hidden;
+}
+
+html {
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  padding: 33px 19.69px 33px 0;
+}
+
+.content-header {
+  margin-left: 63px;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.interactive-header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.search-header {
+  border-radius: 40px;
+	background: rgb(245, 247, 250);
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 15.43px;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+input[type="text"] {
+  all: unset;
+}
+
+button {
+  all: unset
+}
+
+.avatar {
+  border-radius: 50%; /* Скругляем контейнер до круга */
+  width: 50px;  /* Размер контейнера (ширина круга) */
+  height: 50px; /* Размер контейнера (высота круга) */
+  overflow: hidden; /* Скрываем лишние части изображения */
+}
+
+.avatar>img {
+  height: 100%; /* Заполняем контейнер по высоте */
+  object-fit: cover; /* Адаптируем изображение, чтобы оно не выходило за пределы */
+  object-position: top right; /* Сдвигаем изображение, чтобы лицо было по центру и сверху */
+}
+
+.btn-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 12px;
+  background: rgb(245, 247, 250);
+}
+
+.text-header {
+  color: rgb(52, 60, 106);
+  font-family: Inter;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.nav-left {
+  max-width: 190px;
+  padding-right: 60px;
+}
+
+.nav-left>ul{
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+
+ul {
+  all: unset;
+}
+
+li {
+  list-style: none;
+}
+
+.li-nav-left {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.main {
+  display: flex;
+  height: 100%;
+}
+.main-content {
+  background-color: rgb(245, 247, 250);
+  width: 100%;
+}
+
+.panel {
+  background-color: white;
+  margin: 31px 40px 0 40px;
+  border-radius: 25px;
+  font-size: 16px;
+  padding: 0 30px;
+
+}
+
+.nav-panel {
+  display: flex;
+  gap: 72px;
+  font-size: 16px;
+  color: rgb(113, 142, 191);
+  margin-bottom: 52px;
+  padding-top: 32px;
+}
+
+.input-form {
+  color: rgb(113, 142, 191);
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 16px 293px 16px 20px;
+}
+
+.form-div {
+  display: flex;
+  gap: 29px;
+}
+
+.form-settings {
+
+}
+.form-column {
+  display: flex;
+  flex-direction: column;
+}
